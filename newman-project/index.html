@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>newman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">n e w m a n</td>
+                <td id="navigation">
+                    <a href="#model">model</a>
+                    <a href="#bio">about</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Become the next breed of humans.</h1>
+                <p>To what extent will robots and humans merge?<br> At newman, our dreams for the future are personified. Our cutting edge robotic frameworks and AI research, particularly for understanding human-robot interactions and their potential coexistence as a better version of homo - sapiens are unrivalled in the world of Robotic Engineering.</p>
+                <button class="btn_one">Learn More</button><br>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="model">
+        <h1>Model</h1>
+        <div id="photos">
+            <h3>Newman V1.0</h3>
+            <p>“I am newman Robotics’ latest human-like robot, created by combining our innovations in science, engineering and medicine. Think of me as a personification of our dreams for the future of Humans, as well as a framework for advanced AI and Robotics research, and an agent for exploring human-robot experience”.</p>
+            <img onclick="magnify($(this).attr('src'))" src="./Robot-run.png">
+            <img onclick="magnify($(this).attr('src'))" src="./Robot-sit.png">
+            <img onclick="magnify($(this).attr('src'))" src="./Robot-stance.png">
+            <img onclick="magnify($(this).attr('src'))" src="./Robot-tall.png">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>About</h1>
+        <p>
+            Newman Robotics is an AI and Robotics company dedicated to creating socially intelligent machines that can enrich the quality of our lives as well as replace us as the next evolution of the human race.
+        </p>
+        <p>
+            Founded by Kelechi Alan, Ph.D., the Newman team has built a worldwide reputation for creating robots that look and act genuinely alive, including renowned robot character Newman V1.0. Our innovations in AI research and development, robotics engineering, experiential design, storytelling and material science bring robots to life as engaging characters, useful products, and as the next component in human evolution.
+        </p>
+        <p>
+            Our robots serve as AI platforms for research, education, medical and healthcare, sales and service, and entertainment applications, and will evolve to become benevolent, super-intelligent living machines who advance civilization and achieve ever-greater good for all.
+        </p><br>
+        <tr>
+            <td>
+                <a class="social" href="https://web.facebook.com/alan.ekechi.3/"><i class="fab fa-facebook"></i></a>
+                <a class="social" href="https://www.twitter.com/kendrick_alan"><i class="fab fa-twitter"></i></a>
+                <a class="social" href="https://www.instagram.com/kaycee_alan"><i class="fab fa-instagram"></i></a>
+            </td>
+        </tr>
+    </div>
+    <div id="footer">
+        made on earth by a human <br> <br><a href="https://github.com/KayceeAlan">Founder & CEO: Kelechi Alan</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
