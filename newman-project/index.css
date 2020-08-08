@@ -336,5 +336,6 @@ button:focus {
     }
     #about p{
         text-align: left;
+        line-height: 35px;
     }
 }
