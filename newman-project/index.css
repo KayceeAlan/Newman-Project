@@ -309,11 +309,12 @@ button:focus {
     #inner_table tr td{
         padding:10px 0px !important;
     }
+    
     #model h1 {
-        width:19%;
+        width:29%;
     }
     #bio h1 {
-        width:25%;
+        width:30%;
     }
     header {
         width:96vw;
@@ -329,5 +330,11 @@ button:focus {
     }
     #navigation a {
         color:#000;
+    }
+        #about h1{
+        text-align: left;
+    }
+    #about p{
+        text-align: left;
     }
 }
